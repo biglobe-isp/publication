@@ -1,0 +1,31 @@
+group 'jp.co.biglobe.lib'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: "file://${rootDir}/docs"
+            pom.version = '1.0.0'
+            pom.groupId = 'jp.co.biglobe.lib'
+            pom.artifactId = 'publication'
+        }
+    }
+}
+
