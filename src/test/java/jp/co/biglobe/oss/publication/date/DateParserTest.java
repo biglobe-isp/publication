@@ -1,5 +1,6 @@
-package jp.co.biglobe.lib.publication.date;
+package jp.co.biglobe.oss.publication.date;
 
+import jp.co.biglobe.oss.publication.date.DateParser;
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;

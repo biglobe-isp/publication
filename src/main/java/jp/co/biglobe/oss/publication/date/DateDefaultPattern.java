@@ -1,11 +1,13 @@
-package jp.co.biglobe.lib.publication.date;
+package jp.co.biglobe.oss.publication.date;
 
 enum DateDefaultPattern {
     yyyyMMddHHmmss("uuuuMMddHHmmss"),
     yyyyMMdd("uuuuMMdd"),
     HHmmss("HHmmss"),
     yyyyMM("uuuuMM"),
-    MMdd("MMdd");
+    MMdd("MMdd"),
+    SEPARATED_yyyyMMddHHmmss("uuuu/MM/dd HH:mm:ss"),
+    ;
 
     private final String value;
 

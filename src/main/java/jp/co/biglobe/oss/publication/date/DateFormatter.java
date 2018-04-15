@@ -1,4 +1,4 @@
-package jp.co.biglobe.lib.publication.date;
+package jp.co.biglobe.oss.publication.date;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;

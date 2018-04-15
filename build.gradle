@@ -1,4 +1,4 @@
-group 'jp.co.biglobe.lib'
+group 'jp.co.biglobe.oss'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'groovy'
@@ -22,8 +22,8 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${rootDir}/docs"
-            pom.version = '1.0.0'
-            pom.groupId = 'jp.co.biglobe.lib'
+            pom.version = '1.0.1'
+            pom.groupId = 'jp.co.biglobe.oss'
             pom.artifactId = 'publication'
         }
     }
